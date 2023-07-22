@@ -1,0 +1,28 @@
+from dataclasses import asdict
+
+
+first_name = input("What is your first name?")
+last_name = input("What is your last name?")
+hair_color = input("What is your hair color?")
+eye_color = input("What is your eye color?")
+email_adress = input("Please, enter your e-mail adress:")
+phone_number = input("Please, enter your phone number:")
+job_title = input("What is your job title?")
+training_status = input("Are you training?")
+starting_month = input("Which month do you started at your current job?")
+id_number = input("Please, enter your ID number:")
+separation = ("---------------------------------------")
+
+print("")
+print("Here is your ID card")
+print(separation)
+print(last_name.upper() + ", " + first_name.capitalize())
+print(job_title.capitalize())
+print("ID: " + id_number)
+print("")
+print(email_adress.lower())
+print(phone_number)
+print("")
+print(f"Hair: {hair_color.capitalize() :14} Eye Color: {eye_color.capitalize()}")
+print(f"Month: {starting_month.capitalize() :13} Training: {training_status.capitalize()}")
+print(separation)
